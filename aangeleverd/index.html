@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meme Archive Browser</title>
-    <script type="module" src="./scripts/main.js" defer></script>
+    <title>Internet Meme Museum</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <h1>Internet Meme Museum</h1>
+            <p class="subtitle">Een reis door de geschiedenis van internet cultuur</p>
+        </header>
+
+        <section class="filter-section">
+            <div class="filter-grid">
+                <div class="filter-item">
+                    <label for="search-input">
+                        <span class="filter-icon">🔍</span>
+                        Zoeken
+                    </label>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Zoek memes..."
+                    >
+                </div>
+
+                <div class="filter-item">
+                    <label for="category-filter">
+                        <span class="filter-icon">🏷️</span>
+                        Categorie
+                    </label>
+                    <select id="category-filter">
+                        <option value="all">Alle categorieën</option>
+                        <option value="reaction">Reaction</option>
+                        <option value="concept">Concept</option>
+                        <option value="animal">Animal</option>
+                        <option value="humor">Humor</option>
+                        <option value="music">Music</option>
+                        <option value="animation">Animation</option>
+                        <option value="relationship">Relationship</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="year-filter">
+                        <span class="filter-icon">📅</span>
+                        Jaar
+                    </label>
+                    <select id="year-filter">
+                        <option value="all">Alle jaren</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filter-footer">
+                <span id="result-count" class="result-count">0 memes gevonden</span>
+                <button id="reset-filters" class="reset-button">Reset filters</button>
+            </div>
+        </section>
+
+        <main id="meme-container" class="meme-grid">
+            <!-- Memes worden hier toegevoegd :P -->
+        </main>
+    </div>
+
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

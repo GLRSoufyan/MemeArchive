@@ -78,5 +78,13 @@
         "category": "concept",
         "image": "galaxybrain.jpg",
         "description": "A progression of brain expansion to show increasing 'enlightenment'."
+    },
+    {
+        "id": 11,
+        "title": "Soufyan going Crazy",
+        "year": 2023,
+        "category": "reaction",
+        "image": "Soufyan.png",
+        "description": "A beautiful showcase of Soufyan his mental state during the making of these tests!"
     }
 ]
